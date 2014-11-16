@@ -4,7 +4,7 @@
  window.addEventListener("scroll", scrollHandler);
 
  function getStyle(obj, attri) {
-     return obj.currentStyle ? obj.currentStyle[attri] : window.getComputedStyle(obj, null)[attri];
+    return window.getComputedStyle ? window.getComputedStyle(obj,null)[attri] : obj.currentStyle[attri]; 
  }
 
  function scrollHandler(e) {
