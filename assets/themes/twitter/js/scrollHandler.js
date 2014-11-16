@@ -1,10 +1,10 @@
  var navbar = document.getElementsByClassName("navbar")[0],
      nav_narrow = document.getElementsByClassName("nav-narrow")[0],
-     navbarPaddingTop = getStyle(navbar, "padding-top").match(/([\d]+)/g)[0];
+     navbarPaddingTop = getStyle(navbar, "paddingTop").match(/([\d]+)/g)[0];
  window.addEventListener("scroll", scrollHandler);
 
  function getStyle(obj, attri) {
-    return window.getComputedStyle ? window.getComputedStyle(obj,null)[attri] : obj.currentStyle[attri]; 
+    return window.getComputedStyle ? window.getComputedStyle(obj,null).attri : obj.currentStyle.attri; 
  }
 
  function scrollHandler(e) {
