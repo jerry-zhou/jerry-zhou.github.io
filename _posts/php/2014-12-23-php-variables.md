@@ -32,10 +32,7 @@ php手册上的说明：
 
 	This directive describes the order in which PHP registers GET, POST and Cookie variables into the _REQUEST array. Registration is done from left to right, newer values override older values.
 	
-当然，如果在GET和POST中重复的变量
-
-
-名，就会发生覆盖（后面的覆盖前面的）。
+当然，如果在GET和POST中重复的变量名，就会发生覆盖（后面的覆盖前面的）。
 
 示例:
 
